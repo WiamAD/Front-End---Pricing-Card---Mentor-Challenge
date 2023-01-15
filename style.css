@@ -19,8 +19,6 @@ body{
 }
 
 .card{
-    width: 600px;
-    height: 400px;
     box-shadow: 2px 3px 7px 0 rgba(0,0,0,0.35);
     border-radius: 5px;
     overflow: hidden;
@@ -56,7 +54,7 @@ body{
 
 #bottom-left{
     display: inline-block;
-    width: 50%;
+    width: 100%;
     height: 100%;
     vertical-align: top;
     background-color: #2ab2af;
@@ -110,7 +108,7 @@ button:hover{
 
 #bottom-right{
     display: inline-block;
-    width: 50%;
+    width: 100%;
     height: 100%;
     vertical-align: top;
     background-color: #2ebfbd;
@@ -124,4 +122,13 @@ ul{
     opacity: .8;
 }
 
+@media (min-width: 576px){
+    .card{
+        width: 550px;
+        height: 400px;
+    }
 
+    #bottom-left, #bottom-right{
+        width: 50%;
+    }
+}
